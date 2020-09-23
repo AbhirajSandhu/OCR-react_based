@@ -1,0 +1,17 @@
+<%- include ("partials/header") %>
+
+<div class="container">
+		<h1 class="text-center" style="padding: 10px;">Text Recognization</h1>
+	<div style="width:30%; margin: 70px auto;">
+    <form id="frmUploader" enctype="multipart/form-data" action="/upload" method="post" >
+	<div class="form-group">
+		<input class="form-control btn btn-info" type="file" name="avatar">
+	</div>
+	<div class="form-group">
+		<input class="form-control btn btn-primary" type="submit" name="submit" id="btnSubmit" value="Upload">
+	</div>
+    </form>
+	</div>
+</div>
+
+<%- include ("partials/footer") %>

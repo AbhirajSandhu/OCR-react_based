@@ -1,0 +1,24 @@
+npm i nodemon --save-dev
+express
+concurrently
+
+"scripts": {
+    "start": "node app.js",
+    "app": "nodemon app.js",
+    "client": "cd client && npm start"
+    or
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run app\" \"npm run client\""
+    //concurrently runs more than one script at once
+  }
+//npm run dev
+"test": "echo \"Error: no test specified\" && exit 1",
+//no need of this
+
+npm i -g create-react-app
+create-react-app client
+
+//in client package.json
+//alag ton not in script
+,
+"proxy": "http://localhost:5000",

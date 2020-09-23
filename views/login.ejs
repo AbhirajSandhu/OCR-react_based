@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <head>
+        <title>LOGIN</title>
+        <link rel="stylesheet" type="text/css" href="/stylesheets/login.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+
+    <header>
+      <a class="logo">KingsVpunjaB</a>
+        <ul>
+          <li><a href="/home">Home</a></li>
+          <li><a href="/new">OCR</a></li>
+          <li><a href="/login">Login</a></li>
+          <li><a href="/register">Sign Up</a></li>
+          <li><a href="aboutus">AboutUs</a></li>
+        </ul>
+        <div class="menu-toggle">
+          <i class="fa fa-bars" aria-hidden="true"></i>
+        </div>
+    </header>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $('.menu-toggle').click(function(){
+          $('ul').toggleClass('active');
+        })
+      })
+    </script>
+
+  <div  class="banner">
+     <div class="container">
+        <div class="centered">
+            <div class="box">
+              <h2>Login</h2>
+              <form>
+                <div class="inputBox">
+                  <label>Username</label>
+                  <input type="text" name="" required="">
+                </div>
+                <div class="inputBox">
+                  <label>Password</label>
+                  <input type="password" name="" required="">
+                </div>
+                <input type="submit" name="" value="Submit">
+              </form>
+            </div>
+        </div>
+      </div> 
+
+   <div class="clouds">
+    <img src="/images/cloud1.png" style="--i:1;">
+    <img src="/images/cloud2.png" style="--i:2;">
+    <img src="/images/cloud3.png" style="--i:3;">
+    <img src="/images/cloud4.png" style="--i:4;">
+    <img src="/images/cloud5.png" style="--i:5;">
+  </div>
+  </div>
+    <script type="text/javascript">
+      window.addEventListener("scroll", function(){
+        var header = document.querySelector("header");
+        header.classList.toggle("sticky", window.scrollY > 0)
+      })
+    </script>
+</body>
+</html>

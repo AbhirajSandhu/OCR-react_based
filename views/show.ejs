@@ -1,0 +1,23 @@
+<%- include ("partials/header") %>
+
+<div class="container">
+	<header class="jumbotron">
+
+<div class="conatiner">
+	<h1 class="text-center" style="padding: 10px;"><%= data.text %></h1>
+</div>
+<div class="conatiner">
+	<a href="/home">
+		go home
+	</a>
+</div>
+<div class="conatiner">
+	<a href="/sort/<%= data._id %>">
+		sort and save
+	</a>
+</div>
+		
+	</header>
+</div>
+
+<%- include ("partials/footer") %>
