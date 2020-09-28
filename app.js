@@ -10,7 +10,8 @@ var express			 = require('express'),
 	
 
 app.use(express.static(__dirname + "/public"));//install express-static
-mongoose.connect("mongodb://localhost/new_ocr", {  //new_ocr  
+mongoose.connect("mongodb+srv://sandhuz:myneisajshsu0001!@cluster0.x1dbj.mongodb.net/<dbname>?retryWrites=true&w=majority", {  //new_ocr  
+//mongodb://localhost/new_ocr
 	useNewUrlParser: true,
 	useUnifiedTopology: true,
   	useCreateIndex: true,
@@ -139,7 +140,8 @@ app.get("/myform/:id", function(req, res){
 		if(err){
 			console.log(err);
 		}else{
-			res.render("myform", {form : foundData});
+			// res.render("myform", {form : foundData});
+			res.json(foundData);
 		}
 	})
 })
